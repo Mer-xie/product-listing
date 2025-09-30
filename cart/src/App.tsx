@@ -10,7 +10,6 @@ function App() {
                 <div>
                     <CartProvider>
                         <Products />
-                        {/*<CartConfirmation/>*/}
                     </CartProvider>
                 </div>
             </div>
