@@ -1,13 +1,15 @@
 import React from "react";
-import {Product} from "../../context/cartContext";
+import {Product, useCart} from "../../context/cartContext";
 
 type CartConfirmationProps = {
     items:{product: Product, quantity:number}[];
     total:number;
-    onCancel:()=>void;
 }
 
-export function CartConfirmation({ items, total, onCancel }: CartConfirmationProps)  {
+export function CartConfirmation({ items, total }: CartConfirmationProps)  {
+    const { clearCart } = useCart();
+
+
     return (
         <div className='fixed inset-0 bg-black/60 z-50 flex items-center justify-center'>
         <div className='bg-(--rose50) rounded-lg shadow-2xl w-full max-w-xl max-h-[80vh] overflow-y-auto p-8'>
@@ -25,7 +27,7 @@ export function CartConfirmation({ items, total, onCancel }: CartConfirmationPro
                                     <p className='font-semibold'>{product.name}</p>
                                     <p className='text-sm'>
                                         <span className='text-(--orange)'>{quantity}x</span>{' '}
-                                        <span className='text-(--rose400)'>@ ${product.price.toFixed(2)}</span>
+                                        <span className='text-(--rose400) pl-3'>@ ${product.price.toFixed(2)}</span>
                                     </p>
                                 </div>
                             </div>
@@ -40,7 +42,7 @@ export function CartConfirmation({ items, total, onCancel }: CartConfirmationPro
                     </div>
                 </div>
 
-                <button onClick={onCancel} className='bg-(--orange) w-full shadow border
+                <button onClick={clearCart} className='bg-(--orange) w-full shadow border
                  text-(--rose50) py-3 px-6 rounded-full cursor-pointer text-sm'>
                     Start New Order!
                 </button>
