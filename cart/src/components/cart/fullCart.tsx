@@ -54,7 +54,7 @@ export function FullCart(){
                     <span className=' font-600 px-1.5'><img src={'../assets/images/icon-carbon-neutral.svg'} alt={'carbon neutral icon'}/></span>
                     This is a <span className='px-1 text-(--primary) font-[600]'> carbon-neutral </span> delivery
                 </p>
-                
+
                 {/*this button will hold the cart confirmation toggle function*/}
                 <button onClick={() => setConfirmation(true)}
                         className='w-full bg-(--orange) hover:bg-orange-800 text-(--rose50) shadow
@@ -65,8 +65,6 @@ export function FullCart(){
                     <CartConfirmation
                         items={getGroupedValues(groupedItems)}
                         total={total.toFixed(2)}
-                        onCancel={() =>setConfirmation(false)}
-
                     />)}
             </div>
 
