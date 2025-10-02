@@ -11,7 +11,7 @@ export default function Products() {
     return (
         <>
             <h1 className='font-red text-(--primary) font-700 text-4xl mb-6 font-[700]'>Desserts</h1>
-        <div className='grid grid-cols-6 gap-8'>
+        <div className='grid grid-cols-1 sm:grid-cols-6 gap-8'>
             <div className='grid xl:grid-cols-3 md:grid-cols-2 sm:grid-rows-1 col-span-4 gap-6'>
             {productsList.map((product, index) => (
                 <div className='' key={index}>
@@ -23,9 +23,12 @@ export default function Products() {
                 </div>
             ))}
             </div>
-                <div className='grid gris-cols-1 col-span-2'>
-                    {cartItems.length === 0 ? <EmptyCart/> : <FullCart/> }
+            <div className="sm:col-span-2 w-full flex justify-center">
+                <div className="w-full max-w-[600px] sm:max-w-none">
+                    {cartItems.length === 0 ? <EmptyCart /> : <FullCart />}
+                </div>
             </div>
+
         </div>
             </>
     );
