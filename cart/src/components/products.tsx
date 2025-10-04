@@ -10,7 +10,7 @@ export default function Products() {
 
     return (
         <>
-            <h1 className='font-red text-(--primary) font-700 text-4xl mb-6 font-[700]'>Desserts</h1>
+            <h1 className='font-red text-(--primary) font-700 text-3xl ml-4 sm:ml-0 sm:text-4xl mb-6 font-[700]'>Desserts</h1>
             <div className="grid grid-cols-1 sm:grid-cols-6 gap-8 px-4 sm:px-0">
                 <div className="sm:col-span-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
                     {productsList.map((product, index) => (

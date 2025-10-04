@@ -6,7 +6,7 @@ import Products from "./components/products";
 
 function App() {
     return (
-            <div className='p-15 bg-(--rose50) font-red'>
+            <div className='p-8 sm:p-15 bg-(--rose50) font-red'>
                 <div>
                     <CartProvider>
                         <Products />
