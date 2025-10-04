@@ -2,7 +2,7 @@ import React from 'react';
 
 export function EmptyCart(){
     return(
-        <div className='bg-(--rose50) shadow p-6 h-fit -mt-8 rounded-lg'>
+        <div className='bg-(--rose50) shadow p-6 h-fit -mt-8 sm:-mt-0 rounded-lg'>
             <h2 className='text-(--orange) text-2xl font-700 pb-15 font-[700]'>Your Cart (0)</h2>
 
             <div className='place-items-center'>
