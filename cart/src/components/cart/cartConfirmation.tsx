@@ -31,6 +31,7 @@ export function CartConfirmation({ items, total }: CartConfirmationProps)  {
                                     </p>
                                 </div>
                             </div>
+
                             <p className='font-bold'>${(product.price * quantity).toFixed(2)}</p>
                         </div>
                         <hr className="border-t border-(--rose300) opacity-30 my-5" />
