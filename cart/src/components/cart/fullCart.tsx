@@ -53,7 +53,7 @@ export function FullCart(){
           <span className='font-[600] px-0.5 sm:px-1.5 '>
             <img src={'../images/icon-carbon-neutral.svg'} alt={'carbon neutral icon'} />
           </span>
-                    This is a <span className='sm:px-0.5 px-1 text-[--primary] font-[600]'>carbon-neutral</span> delivery
+                    This is a <span className='px-0.5 sm:px-1 text-[--primary] font-[600]'>carbon-neutral</span> delivery
                 </p>
 
                 {/*this button will hold the cart confirmation toggle function*/}
