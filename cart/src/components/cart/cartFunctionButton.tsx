@@ -29,13 +29,13 @@ const AddDelete: React.FunctionComponent<AddDeleteProps>=({product}) => {
                             onClick={handleDecrement}
                             className='cursor-pointer border rounded-full p-[5px] focus:bg-(--rose50)
                              focus:text-(--orange) '>
-                            <img src={'../assets/images/icon-decrement-quantity.svg'} alt='increment icon'/>
+                            <img src={'../images/icon-decrement-quantity.svg'} alt='increment icon'/>
                         </button>
                         <span className='px-6 text-sm font-[600]'>{quantity}</span>
                         <button
                             onClick={handleIncrement}
                             className='cursor-pointer border rounded-full p-[5px] focus:bg-(--rose50) focus:text-(--orange)'>
-                            <img src={"../assets/images/icon-increment-quantity.svg"} alt='decrement icon'/>
+                            <img src={"../images/icon-increment-quantity.svg"} alt='decrement icon'/>
                         </button>
                     </div>
 

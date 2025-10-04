@@ -37,7 +37,7 @@ export function FullCart(){
                         <span className='text-(--primary) opacity-65 font-[600]'>${(product.price * quantity).toFixed(2)}</span>
                     </div>
                    <button onClick={() => removeAllFromCart(product.name)} className='-mt-9.5 cursor-pointer'>
-                        <img  src={"../assets/images/icon-remove-item.svg"} className='shadow border border-(--rose300) hover:border-black rounded-full p-0.5' alt={''}/>
+                        <img  src={"../images/icon-remove-item.svg"} className='shadow border border-(--rose300) hover:border-black rounded-full p-0.5' alt={''}/>
                     </button>
                 </div>
                 <hr className='text-(--rose100) py-1'/>
@@ -51,7 +51,7 @@ export function FullCart(){
 
                 <p className='text-sm font-[400] shadow bg-[--rose300] text-[--rose100] flex items-center justify-center gap-x-1 py-3 my-4 rounded'>
           <span className='font-[600] sm:px-0.5 px-1.5'>
-            <img src={'../assets/images/icon-carbon-neutral.svg'} alt={'carbon neutral icon'} />
+            <img src={'../images/icon-carbon-neutral.svg'} alt={'carbon neutral icon'} />
           </span>
                     This is a <span className='sm:px-0.5 px-1 text-[--primary] font-[600]'>carbon-neutral</span> delivery
                 </p>

@@ -32,7 +32,7 @@ return (
                  border-(--orange) py-2 px-6  rounded-full flex cursor-pointer relative
                   bottom-5 left-1/2
             -translate-x-1/2'>
-                    <img src={'../assets/images/icon-add-to-cart.svg'} alt={'add to cart icon'}/>
+                    <img src={'../images/icon-add-to-cart.svg'} alt={'add to cart icon'}/>
                     <p className='px-2 text-sm text-(--primary) font-red font-[400]'>Add to cart</p>
                 </button>
                 </div>

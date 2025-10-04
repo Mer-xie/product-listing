@@ -13,7 +13,7 @@ export function CartConfirmation({ items, total }: CartConfirmationProps)  {
     return (
         <div className='fixed inset-0 bg-black/60 z-50 flex items-center justify-center'>
         <div className='bg-(--rose50) rounded-lg shadow-2xl w-full max-w-xl max-h-[80vh] overflow-y-auto p-8'>
-                <img src={'../assets/images/icon-order-confirmed.svg'} className='mb-2' alt='order' />
+                <img src={'../images/icon-order-confirmed.svg'} className='mb-2' alt='order' />
                 <h1 className='text-(--primary) text-3xl font-[700]'>Order Confirmed</h1>
                 <p className='text-(--primary) opacity-70 text-sm pt-0.5 pb-6 font-[400]'>we hope you enjoy your food!</p>
 
