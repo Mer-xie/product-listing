@@ -49,10 +49,11 @@ export function FullCart(){
                     <p className='font-[700]' >${total.toFixed(2)}</p>
                 </div>
 
-
-                <p className='font-[400] shadow bg-(--rose300) text-(--rose100) text-sm flex align-middle justify-center py-3.5 my-4.5 rounded'>
-                    <span className=' font-600 px-1.5'><img src={'../assets/images/icon-carbon-neutral.svg'} alt={'carbon neutral icon'}/></span>
-                    This is a <span className='px-1 text-(--primary) font-[600]'> carbon-neutral </span> delivery
+                <p className='text-xs sm:text-sm font-[400] shadow bg-[--rose300] text-[--rose100] flex items-center justify-center gap-x-1 py-3 my-4 rounded'>
+          <span className='font-[600] sm:px-0.5 px-1.5'>
+            <img src={'../assets/images/icon-carbon-neutral.svg'} alt={'carbon neutral icon'} />
+          </span>
+                    This is a <span className='sm:px-0.5 px-1 text-[--primary] font-[600]'>carbon-neutral</span> delivery
                 </p>
 
                 {/*this button will hold the cart confirmation toggle function*/}
