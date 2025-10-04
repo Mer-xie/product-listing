@@ -23,13 +23,15 @@ export default function Products() {
                         </div>
                     ))}
                 </div>
-                
+
                 <div className="sm:col-span-2 w-full mt-5">
                     <div className="w-full">
                         {cartItems.length === 0 ? <EmptyCart /> : <FullCart />}
                     </div>
                 </div>
             </div>
+            <p className={'text-(--rose300) text-xs text-center pt-15'}>Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+               <span className={'font-[600]'}> Coded by Mercy.</span> </p>
             </>
     );
 }
