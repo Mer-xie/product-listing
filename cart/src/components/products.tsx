@@ -24,7 +24,7 @@ export default function Products() {
                     ))}
                 </div>
 
-                <div className="sm:col-span-2 w-full mt-5">
+                <div className="sm:col-span-2 w-full mt-5 sm:-mt-8">
                     <div className="w-full">
                         {cartItems.length === 0 ? <EmptyCart /> : <FullCart />}
                     </div>
