@@ -49,7 +49,7 @@ export function FullCart(){
                     <p className='font-[700]' >${total.toFixed(2)}</p>
                 </div>
 
-                <p className='text-[10px] font-[400] shadow bg-[--rose300] text-[--rose100] flex items-center justify-center gap-x-1 py-3 my-4 rounded'>
+                <p className='text-xs font-[400] shadow bg-[--rose300] text-[--rose100] flex items-center justify-center gap-x-1 py-3 my-4 rounded'>
           <span className='font-[600] px-0.5 sm:px-1.5 '>
             <img src={'../images/icon-carbon-neutral.svg'} alt={'carbon neutral icon'} />
           </span>

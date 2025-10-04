@@ -24,7 +24,7 @@ export function CartConfirmation({ items, total }: CartConfirmationProps)  {
                             <div className='flex gap-4 items-center'>
                                 <img src={product.image.thumbnail} alt={product.name} className='w-12 h-12 object-cover' />
                                 <div>
-                                    <p className='font-semibold text-xs sm:text-sm'>{product.name}</p>
+                                    <p className='font-semibold text-[11px] sm:text-sm'>{product.name}</p>
                                     <p className='text-sm'>
                                         <span className='text-(--orange)'>{quantity}x</span>{' '}
                                         <span className='text-(--rose400) pl-3'>@ ${product.price.toFixed(2)}</span>
