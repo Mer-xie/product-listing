@@ -14,7 +14,7 @@ export default function Products() {
             <div className="grid grid-cols-1 sm:grid-cols-6 gap-8 px-4 sm:px-0">
                 <div className="sm:col-span-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
                     {productsList.map((product, index) => (
-                        <div key={index} className="w-full">
+                        <div key= {index} className="w-full">
                             <img src={product.image.desktop} alt={product.name} className="rounded-lg w-full " />
                             <Cart product={product} />
                             <p className="text-(--rose300) text-sm font-[400]">{product.category}</p>

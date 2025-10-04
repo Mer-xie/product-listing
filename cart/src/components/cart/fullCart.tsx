@@ -71,6 +71,5 @@ export function FullCart(){
 
         </div>
 
-
     )
 }
