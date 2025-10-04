@@ -12,12 +12,12 @@ export function CartConfirmation({ items, total }: CartConfirmationProps)  {
 
     return (
         <div className='fixed inset-0 bg-black/60 z-50 flex items-center justify-center'>
-        <div className='bg-(--rose50) rounded-lg shadow-2xl w-full max-w-xl max-h-[80vh] overflow-y-auto p-8'>
+        <div className='bg-(--rose50) rounded-lg shadow-2xl w-full max-w-xl max-h-[80vh] overflow-y-auto p-4 sm:p-8'>
                 <img src={'../images/icon-order-confirmed.svg'} className='mb-2' alt='order' />
                 <h1 className='text-(--primary) text-3xl font-[700]'>Order Confirmed</h1>
                 <p className='text-(--primary) opacity-70 text-sm pt-0.5 pb-6 font-[400]'>we hope you enjoy your food!</p>
 
-            <div className='bg-(--rose100) p-5 rounded-lg mb-7'>
+            <div className='bg-(--rose100) p-3 sm:p-5 rounded-lg mb-7'>
                 {items.map(({product, quantity}, index) => (
                     <div key={index} className='mb-4'>
                         <div className='flex justify-between items-center'>
